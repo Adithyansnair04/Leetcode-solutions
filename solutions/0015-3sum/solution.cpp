@@ -17,10 +17,8 @@ public:
             else if(result<0)
                 left++;
             else 
-                right--;}
-            
-            
-
+                right--;
+                }
         }
 return(soln);
     }
