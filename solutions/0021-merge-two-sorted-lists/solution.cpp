@@ -23,7 +23,10 @@ public:
                 list1=list1->next;}
            tail=tail->next; 
         }
-        tail->next = (list1 != nullptr) ? list1 : list2;
+        if (list1 != nullptr)
+    tail->next = list1;
+        else
+    tail->next = list2;
         return dummy.next;
 
     }
