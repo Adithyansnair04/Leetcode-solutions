@@ -1,12 +1,7 @@
-struct Node {
-    int data;         
-    Node* next;         
-
-    Node(int val) : data(val), next(nullptr) {}
-};class Solution {
+class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-   ListNode dummy(0); // Allocated on the stack to avoid dynamic allocation overhead
+   ListNode dummy(0); 
         ListNode* current = &dummy;
         int carry = 0;
 
